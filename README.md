@@ -1,25 +1,23 @@
-# Letter Grade Calculator
+# Grade Calculator
 
-This is a simple JavaScript code that calculates a grade based on a given number grade.
+This script calculates the letter grade based on a numeric input. It prompts the user to enter a whole number grade (0-100), determines the corresponding letter grade using predefined grading thresholds, and displays the result in the console.
 
 ## Usage
 
-To use this code, you need to have a basic understanding of JavaScript and how to run it in a browser console.
+1. **Enter Grade**: When prompted, enter a whole number grade between 0 and 100.
 
-1. Copy the code and paste it into your browser's console.
-2. You will be prompted to enter a number grade (0 - 100).
-3. After entering the grade, the code will calculate and display the corresponding letter grade.
+2. **Calculate Letter Grade**: The script assigns the following letter grades based on the numeric input:
+   - 90-100: A
+   - 80-89: B
+   - 70-79: C
+   - 60-69: D
+   - 50-59: F
+   - Below 50 or above 100: Displays an error message.
 
-## Code Explanation
+3. **Display Result**: The script outputs a message indicating the numeric grade entered and the corresponding letter grade earned in the class.
 
-The code uses the `parseInt()` function to convert the user input into an integer. Then, it uses a series of `if...else` statements to determine the letter grade based on the number grade.
+## Example
 
-Here's a breakdown of the code:
-
-- `x = parseInt(prompt('Enter Number Grade (Please enter a whole number)'))`: This line prompts the user to enter a number grade and converts the input into an integer.
-- The `if...else` statements check the value of `x` and assign the corresponding letter grade to `y`.
-- `console.log('You have a(n) ' + x + '%, which means you have earned a(n) ' + y + ' in class!')`: This line logs the final result to the console.
-
-## Error Handling
-
-If the user enters a number outside the range of 0 - 100, the code will display an error message.
+If the user enters a grade of 85:
+```plaintext
+You have a(n) 85%, which means you have earned a(n) B in class!
